@@ -1,18 +1,24 @@
+@font-face {
+    font-family: 'bluunext-bold';
+    src url:url('bluunext-bold.ttf') format('truetype'),
+        font-weight: normal;
+    font-style: normal;}
+
 body {
-	background: #FAEBD7 url('https://i.pinimg.com/originals/c8/ab/d5/c8abd5490cb7a135e63f7efdcc85fcb5.jpg');
-	color: #333;
+
+	background-color: #000;
 }
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: white;
 }
 
 a:hover { color: Tomato; }
 
 header, nav, main, footer {
-	width: 80%;
-	margin: auto;
+	width: 100%;
+	margin: center;
 	font-family: 'Space Mono', monospace;
 
 }
@@ -20,54 +26,73 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
-	min-height: 100px;
-	margin-top: 60px;
+	
+	
 	
 	
 }
 
 header h1 {
 	padding: 40px 60px;
-	font-family: 'Space Mono', monospace;
-	font-size: 30px;
+	font-family: 'bluunext-bold', normal;
+	font-size: 45px;
 }
 
 
 /* Nav styles */
-nav { background-color: #333; }
+nav { background-color: #000; }
 nav ul { 
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+
 }
-nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
+nav li { padding: 20px 10px; }
+nav a { color: white; }
 nav a:hover { color: white; }
 
 
 /* Main styles */
 main { 
-	background-color: rgba(204,186,47,80);
+    
+	min-height: 420px;
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 50% 50%;
 	font-family: 'Space Mono', monospace;
+	font-size: 16px;
+	line-height: 150%;
+
 }
 
 section {
-	padding: 40px 60px;
+	padding: 100px 30px;
 }
+
+
+}
+
 
 section ul, aside ul {
-	list-style-type: square;
-	margin-top: 20px; 
+	list-style-type: circle;
+	margin-top: 100px; 
 	margin-left: 30px;
+	color: white;
 }
+
+
+.middle {position:fixed;
+left: 33%;
+color: white;
+max-width: 375px;}
+
+
+
 
 aside {
-	padding: 40px 10px;
+	padding: 100px 150px;
+	position: fixed;
+	left: 70%;
+	color: white;
 }
-
 
 
 /* Footer styles */
@@ -75,5 +100,11 @@ footer {
 	background-color: #000;
 	color: white;
 	text-align: center;
+	min-height: 50px; 
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+
  }
  footer p { padding: 20px; }
